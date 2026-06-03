@@ -1,0 +1,6 @@
+{
+  "name": "Slate Reader",
+  "description": "A high-performance document reader and viewer with a clean Material 3 interface, optimized for PDF and EBook reading.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

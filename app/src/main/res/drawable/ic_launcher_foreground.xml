@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Subtle Outer Shadow under the Book Cover -->
+    <path
+        android:fillColor="#38000000"
+        android:pathData="M 54,39 C 43,35 31,35 20,39 L 20,75 C 31,71 43,71 54,74 C 65,71 77,71 88,75 L 88,39 C 77,35 65,35 54,39 Z" />
+
+    <!-- Dark Book Cover (Left Half) -->
+    <path
+        android:fillColor="#0D1C33"
+        android:pathData="M 54,35.5 C 43.5,31.5 31.5,31.5 20.5,35.5 L 20.5,72.5 C 31.5,68.5 43.5,68.5 54,71.5 Z" />
+
+    <!-- Dark Book Cover (Right Half) -->
+    <path
+        android:fillColor="#0D1C33"
+        android:pathData="M 54,35.5 C 64.5,31.5 76.5,31.5 87.5,35.5 L 87.5,72.5 C 76.5,68.5 64.5,68.5 54,71.5 Z" />
+
+    <!-- Stacked Under-Pages (Left Stack, slightly darker beige) -->
+    <path
+        android:fillColor="#DFD3B8"
+        android:pathData="M 53.5,35 C 43,31.5 32,31.5 21.5,35 L 21.5,71.5 C 32,68 43,68 53.5,71 Z" />
+
+    <!-- Stacked Under-Pages (Right Stack, slightly darker beige) -->
+    <path
+        android:fillColor="#DFD3B8"
+        android:pathData="M 54.5,35 C 65,31.5 76,31.5 86.5,35 L 86.5,71.5 C 76,68 65,68 54.5,71 Z" />
+
+    <!-- Left Main Top Page (Clean off-white cream) -->
+    <path
+        android:fillColor="#FDFBFA"
+        android:pathData="M 53,34.5 C 42.5,31 31.5,31 21,34.5 L 21,70.5 C 31.5,67 42.5,67 53,70 Z" />
+
+    <!-- Right Main Top Page (Clean off-white cream) -->
+    <path
+        android:fillColor="#FDFBFA"
+        android:pathData="M 55,34.5 C 65.5,31 76.5,31 87,34.5 L 87,70.5 C 76.5,67 65.5,67 55,70 Z" />
+
+    <!-- Subtle Crease/Fold Shadow down the Spine center -->
+    <path
+        android:strokeColor="#1F000000"
+        android:strokeWidth="1.2"
+        android:pathData="M 54,34.5 L 54,70" />
+
+    <!-- Left Page Text Indicator Lines (Polished organic dark-beige color) -->
+    <path
+        android:strokeColor="#B5A486"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 27,43 L 45,43" />
+    <path
+        android:strokeColor="#B5A486"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 27,49 L 45,49" />
+    <path
+        android:strokeColor="#B5A486"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 27,55 L 45,55" />
+    <path
+        android:strokeColor="#B5A486"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 27,61 L 37,61" />
+
+    <!-- Bookmark Ribbon Drop Shadow (vibrant dark-blue ribbon shadow) -->
+    <path
+        android:fillColor="#15000000"
+        android:pathData="M 64,33.5 L 72,32.5 L 72,59.5 L 68,55.5 L 64,59.5 Z" />
+
+    <!-- Bookmark Ribbon (Vibrant royal blue hanging on the right page) -->
+    <path
+        android:fillColor="#1E62D0"
+        android:pathData="M 63,32.5 L 71,31.5 L 71,58.5 L 67,54.5 L 63,58.5 Z" />
+
+</vector>
