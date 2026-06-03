@@ -1,0 +1,50 @@
+name: Build APK V2
+
+on:
+workflow_dispatch:
+
+jobs:
+build:
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Checkout source
+    uses: actions/checkout@v4
+
+  - name: Show repository files
+    run: |
+      pwd
+      ls -la
+      find . -maxdepth 3 -type f | sort
+
+  - name: Setup Java 17
+    uses: actions/setup-java@v4
+    with:
+      distribution: temurin
+      java-version: '17'
+
+  - name: Validate wrapper jar
+    run: |
+      ls -lh gradle/wrapper/
+      file gradle/wrapper/gradle-wrapper.jar || true
+      jar tf gradle/wrapper/gradle-wrapper.jar | head -20 || true
+
+  - name: Setup Gradle
+    uses: gradle/actions/setup-gradle@v4
+
+  - name: Build Debug APK
+    run: |
+      gradle assembleDebug --stacktrace --info
+
+  - name: Find APK
+    run: |
+      find . -name "*.apk" || true
+
+  - name: Upload APK
+    uses: actions/upload-artifact@v4
+    with:
+      name: app-debug
+      path: |
+        **/*.apk
+```
